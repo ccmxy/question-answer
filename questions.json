@@ -1,0 +1,8 @@
+{ "questions": [{
+    "inquiry": "How are you?"
+  }, {
+    "inquiry": "What kind of food do you like?"
+  }, {
+    "inquiry": "What is your favorite type of salad?"
+  }]
+}

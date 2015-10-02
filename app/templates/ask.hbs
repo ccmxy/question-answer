@@ -1,1 +1,9 @@
 <h2>Here you may ask a new question!</h2>
+
+<form>
+      <div class="form-group">
+        <label for="question">Question</label>
+        {{input value=question id="question"}}
+      </div>
+      <button {{action 'saveQ'}}>Save</button>
+    </form>
