@@ -5,14 +5,12 @@ export default Ember.Route.extend({
     return this.store.findAll('question');
   },
 actions: {
-    saveQ() {
-      var params = {
-       inquiry: this.get('question'),
-     };
-      var newQuestion = this.store.createRecord('question', params);
-      newQuestion.save();
-      this.transitionTo('index');
-    }
+  save3(params) {
+    var newQuestion = this.store.createRecord('question', params);
+    newQuestion.save();
+    this.transitionTo('index');
+  }
+
 }
 
 });
