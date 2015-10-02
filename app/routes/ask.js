@@ -6,17 +6,14 @@ export default Ember.Route.extend({
   },
 actions: {
 
-    saveQ() {/*
-      var params = {
-        inquiry: this.get('question1'),
-     };*/
-     var theQuestion = this.get('question1');
+     saveQ() {
      var myRecord = this.store.createRecord('question', {
         inquiry: 'Soup?',
       });
-      myRecord.inquiry = theQuestion;
       myRecord.save();
-   }
+      this.transitionTo('index');
+  }
+
 
 }
 
