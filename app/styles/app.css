@@ -13,4 +13,12 @@ nav .active {
 .page-header, .list-group-item, h2, h4, .button, form{
   text-align: center;
   list-style-type: none;
+  font-family: 'Dosis'
+}
+
+.qna{
+font-family: 'Poiret One', cursive;}
+
+.welcome{
+  font-family: 'Sigmar One';
 }
