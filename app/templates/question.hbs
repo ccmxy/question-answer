@@ -1,3 +1,11 @@
 <h2>{{model.inquiry}}</h2>
 
-{{update-question question=model}}
+
+  <!-- {{#each}}
+
+<li>{{model.inquiry.answer}}</li>
+{{/each}} -->
+
+{{update-question question=model save2="save"}}
+
+{{add-answer question=model save2="save"}}
