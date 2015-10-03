@@ -8,6 +8,7 @@ actions: {
    saveQ() {
      var params = {
        inquiry: this.get('question1'),
+       author: this.get('author'),
      };
      debugger;
 

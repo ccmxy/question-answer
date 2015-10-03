@@ -8,11 +8,10 @@ export default Ember.Route.extend({
     save(params) {
       var newAnswer = this.store.createRecord('answer', params);
       var question = params.question;
-      debugger;
       newAnswer.save().then(function() {
         return question.save();
       });
-    //  this.transitionTo(('question', params.question);
+     //this.transitionTo(('/:question_id', params.question);
     },
   }
 
