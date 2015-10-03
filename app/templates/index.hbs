@@ -1,10 +1,7 @@
 <h1> Welcome, and be sure to check out our wide variety of questions!</h1>
 <ul>
   {{#each model as |question|}}
-    <li>
-         {{question-tile question=question update="update2"}}
-    </li>
-
+         {{question-tile question=question}}
   {{/each}}
 </ul>
 {{new-question save2="save3"}}

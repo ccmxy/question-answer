@@ -1,3 +1,1 @@
-<li>{{question.inquiry}}
-
-{{update-question question=question}}</li>
+<li>{{#link-to 'question' question.id}}{{question.inquiry}}{{/link-to}}{{update-question question=question}}</li>

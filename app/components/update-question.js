@@ -11,7 +11,6 @@ export default Ember.Component.extend({
       var params = {
         inquiry: this.get('upInquiry'),
       };
-      debugger;
       Object.keys(params).forEach(function(key) {
           if(params[key]!==undefined) {
             question.set(key,params[key]);
