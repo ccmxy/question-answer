@@ -1,5 +1,5 @@
 {{#if addAnswer}}
-  <h1>New Question</h1>
+  <h4>Please share</h4>
     <div>
       <form>
         <div class="form-group">
@@ -10,5 +10,5 @@
       </form>
     </div>
 {{else}}
-    <button {{action 'answerFormShow'}}>Add Answer</button>
+    <button {{action 'answerFormShow' class="btn btn-default btn-lg" }}>Add answer<span class="glyphicon glyphicon-star" aria-hidden="true"></span></button>
 {{/if}}

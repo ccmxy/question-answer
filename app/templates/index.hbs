@@ -1,9 +1,9 @@
-<h1> Welcome, and be sure to check out our wide variety of questions!</h1>
-<ul>
+<div class="page-header">
+  <h1> Welcome, <small>and be sure to check out our wide variety of questions!</small></h1>
+</div>
+<ul class="list-group">
   {{#each model as |question|}}
-         {{question-tile question=question}}
+      <li class="list-group-item">  {{question-tile question=question}}</li><br>
   {{/each}}
 </ul>
 {{new-question save2="save3"}}
-
-<p>Today is: {{current-date}}</p>

@@ -1,5 +1,5 @@
 {{#if addNewQuestion}}
-  <h1>New Question</h1>
+  <h2>New Question</h2>
     <div>
       <form>
         <div class="form-group">
@@ -18,14 +18,5 @@
       </form>
     </div>
 {{else}}
-    <button {{action 'questionFormShow'}}>New Question</button>
+    <h2><button {{action 'questionFormShow'}}>New Question</button></h2>
 {{/if}}
-
-
-<!-- <form>
-      <div class="form-group">
-        <label for="question1">Question</label>
-        {{input value=question1 id="question1"}}
-      </div>
-      <button {{action 'saveQ'}}>Save</button>
-    </form> -->

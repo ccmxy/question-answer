@@ -1,11 +1,12 @@
 <h2>{{model.inquiry}}</h2>
-<h4>{{model.notes}}</h4>
+<h4><span class="muted">{{model.notes}}</span></h4>
 
+<h2>{{update-question question=model save2="save"}}</h2>
 
-{{update-question question=model save2="save"}}
-
-{{add-answer question=model save2="save"}}
-
-{{#each model.answers as |answer|}}
-    <p>{{answer.theAnswer}}</p>
-{{/each}}
+<h2>{{add-answer question=model save2="save"}}</h2>
+<i><h4>Answers so far</h4></i>
+<ul class="list-group">
+  {{#each model.answers as |answer|}}
+      <li class="list-group-item">{{answer.theAnswer}}</li><hr>
+  {{/each}}
+</ul>

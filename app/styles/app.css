@@ -1,0 +1,16 @@
+body {
+  padding-top: 70px;
+}
+
+nav .active {
+  font-weight: bold;
+}
+
+.muted {
+  opacity: 0.5;
+}
+
+.page-header, .list-group-item, h2, h4, .button, form{
+  text-align: center;
+  list-style-type: none;
+}
