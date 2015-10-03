@@ -9,3 +9,7 @@
 {{update-question question=model save2="save"}}
 
 {{add-answer question=model save2="save"}}
+
+{{#each model.answers as |answer|}}
+    <p>{{answer.theAnswer}}</p>
+{{/each}}
