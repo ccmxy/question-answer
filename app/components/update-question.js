@@ -9,7 +9,9 @@ export default Ember.Component.extend({
 
     update(question) {
       var params = {
-        inquiry: this.get('upInquiry'),
+        inquiry: this.get('inquiry'),
+        notes: this.get('notes'),
+        author: this.get('author'),
       };
       Object.keys(params).forEach(function(key) {
           if(params[key]!==undefined) {
